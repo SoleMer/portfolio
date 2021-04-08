@@ -1,0 +1,44 @@
+$color-base : #FCEAFE;
+$color-second : #EBDEF0;
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(45px, auto);
+    padding-bottom: 25px;
+}
+.animation-skills { 
+	position: relative; 
+	background: $color-base;
+	//color: $color-base;
+    margin-left: 50px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    height: 30px;
+    animation: aparecer 5s 1;
+}
+
+@for $r from 1 through 7 {
+    @for $c from 1 through 2 {
+        @if #{$c} == 1 {
+            .animation-skills-#{$c} {grid-column: 1};
+        } @else {
+            .animation-skills-#{$c} {grid-column: 2};
+        }
+    }
+}
+h1 {
+    position:absolute;
+    right:0;
+    width:0;
+    background: $color-base;
+    
+}
+@keyframes aparecer {
+    from { color: $color-base }
+    to { color: black}
+}
+@-webkit-keyframes retirada{
+	0%{
+		left: -15px;
+	}
+}

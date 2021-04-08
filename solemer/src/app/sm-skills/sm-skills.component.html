@@ -1,0 +1,14 @@
+<div class="section-title">
+    <h1>My skills</h1>
+</div>
+
+<div class="btns background-basic">
+    <div class="tech" (click)="setSelected('tech')" [ngClass]="{'selected' : selected=='tech'}"><h1>technologies</h1></div>
+    <div class="soft" (click)="setSelected('soft')" [ngClass]="{'selected' : selected=='soft'}"><h1>soft skills</h1></div>
+</div>
+<div class="skills">
+    <app-sm-technologies *ngIf="selected == 'tech' ; else soft"></app-sm-technologies>
+    <ng-template #soft>
+        <app-sm-soft-skills></app-sm-soft-skills>
+    </ng-template>
+</div>

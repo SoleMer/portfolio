@@ -1,0 +1,20 @@
+<div class="container whit-shadow">
+    <p class="option" (click)="setType('all')">All</p>
+    <p class="option large">|</p>
+    <p class="option" (click)="setType('front')">Front End</p>
+    <p class="option large">|</p>
+    <p class="option" (click)="setType('back')">Back End</p>
+<div class="grid">
+    <div class="item flip-container" *ngFor="let t of technologies" >
+        <div class="flipper">
+            <div class="front">
+                <img src="{{t.icon}}" *ngIf="type == 'all' || type == t.type || t.type == 'all'" class="icon">
+            </div>
+            <div class="back">
+                <span>{{t.name}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+

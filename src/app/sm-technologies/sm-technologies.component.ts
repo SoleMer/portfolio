@@ -20,6 +20,11 @@ export class SmTechnologiesComponent implements OnInit {
       type : "front"
     },
     {
+      name : "Postman",
+      icon : "../../assets/icons/postman.png",
+      type : "tools"
+    },
+    {
       name : "TypeScript",
       icon : "../../assets/icons/typescript.svg",
       type : "tools"
@@ -83,7 +88,12 @@ export class SmTechnologiesComponent implements OnInit {
       name : "CSS",
       icon : "../../assets/icons/css-3.svg",
       type : "front"
-    }, //AGREGAR POSTMAN XAMPP SLITE
+    }, 
+    {
+      name : "Xampp",
+      icon : "../../assets/icons/xampp.svg",
+      type : "tools"
+    },
   ];
   
   type: string = "all";

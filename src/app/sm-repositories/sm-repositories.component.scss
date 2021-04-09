@@ -1,0 +1,87 @@
+$color-base : #FCEAFE;
+$color-second : #EBDEF0;
+.big-title {
+    width: 530px;
+    margin-left: 375px;
+}
+.repositories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+.profile {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+    border: solid black;
+    border-radius: 50px;
+    height: 65px;
+    margin-left: 30%;
+}
+.profile:hover{
+	animation: 0.7s click 1;
+}
+
+@keyframes click{
+	25%, 75%{
+		transform:scale(0.8);
+	}
+	50%{
+		transform:scale(1.1);
+	}
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+.box {
+    position: relative;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 100px;
+}
+.repo {
+    margin-left: 40px;
+}
+.repo-name {
+    font-size: large;
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+}
+h3 {
+    margin-top: 0;
+}
+.repo-go {
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+}
+.btn {
+    z-index: 1;
+}
+.btn-go {
+    width: 30px;
+    z-index: 2;
+    bottom: 45px;
+    position: relative;
+    left: 89%;
+    bottom: 24px;
+}
+.repo-tech {
+    display: block;
+    margin-top: 0;
+}
+img:active {
+    animation: 0.7s click 1;
+}

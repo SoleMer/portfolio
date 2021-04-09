@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="section-title big-title margin-top">
+        <h1>GitHub repositories</h1>
+    </div>
+
+    <div class="repositories">
+        <a href="https://github.com/SoleMer" target="blank" class="profile background-basic">
+            <div>
+                <h2>GITHUB PROFILE</h2>
+            </div>
+        </a>
+
+        <div class="box background-basic">
+            <div class="repo" *ngFor="let r of repos">
+                <div class="repo-name">
+                    <h3>{{r.name}}</h3>
+                </div>
+                <div class="repo-go">
+                    <a class="btn" href="{{r.url}}" target="_blank"><img class="with-shadow" src="../../assets/buton.jpg" alt=""></a>
+                </div>
+                <div class="btn-go">
+                    <p>Go</p>
+                </div>
+                <p class="repo-tech">{{r.technology}}</p>
+            </div>
+        </div>
+    </div>
+</div>

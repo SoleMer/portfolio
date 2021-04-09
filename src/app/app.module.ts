@@ -8,6 +8,7 @@ import { SmWorksComponent } from './sm-works/sm-works.component';
 import { SmSkillsComponent } from './sm-skills/sm-skills.component';
 import { SmTechnologiesComponent } from './sm-technologies/sm-technologies.component';
 import { SmSoftSkillsComponent } from './sm-soft-skills/sm-soft-skills.component';
+import { SmRepositoriesComponent } from './sm-repositories/sm-repositories.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SmSoftSkillsComponent } from './sm-soft-skills/sm-soft-skills.component
     SmWorksComponent,
     SmSkillsComponent,
     SmTechnologiesComponent,
-    SmSoftSkillsComponent
+    SmSoftSkillsComponent,
+    SmRepositoriesComponent
   ],
   imports: [
     BrowserModule,

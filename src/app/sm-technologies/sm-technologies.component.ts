@@ -22,12 +22,12 @@ export class SmTechnologiesComponent implements OnInit {
     {
       name : "TypeScript",
       icon : "../../assets/icons/typescript.svg",
-      type : "all"
+      type : "tools"
     },
     {
-      name : "CSS",
-      icon : "../../assets/icons/css-3.svg",
-      type : "front"
+      name : "Git",
+      icon : "../../assets/icons/git.svg",
+      type : "tools"
     },
     {
       name : "PHP",
@@ -40,14 +40,14 @@ export class SmTechnologiesComponent implements OnInit {
       type : "front"
     },
     {
-      name : "JavaScript",
-      icon : "../../assets/icons/java-script.svg",
-      type : "all"
+      name : "Bootstrap",
+      icon : "../../assets/icons/bootstrap.svg",
+      type : "tools"
     },
     {
-      name : "Sass",
-      icon : "../../assets/icons/sass.svg",
-      type : "front"
+      name : "JavaScript",
+      icon : "../../assets/icons/java-script.svg",
+      type : "tools"
     },
     {
       name : "MySQL",
@@ -55,17 +55,37 @@ export class SmTechnologiesComponent implements OnInit {
       type : "back"
     },
     {
-      name : "GO",
-      icon : "../../assets/icons/go-lang.svg",
-      type : "back"
-    },
-    {
-      name : "Bootstrap",
-      icon : "../../assets/icons/bootstrap.svg",
+      name : "Sass",
+      icon : "../../assets/icons/sass.svg",
       type : "front"
     },
+    {
+      name : "Webpack",
+      icon : "../../assets/icons/webpack.svg",
+      type : "tools"
+    },
+    {
+      name : "Vercel",
+      icon : "../../assets/icons/vercel.svg",
+      type : "tools"
+    },
+      {
+        name : "GO",
+        icon : "../../assets/icons/go-lang.svg",
+        type : "back"
+      },
+    {
+      name : "NPM",
+      icon : "../../assets/icons/npm.svg",
+      type : "tools"
+    },
+    {
+      name : "CSS",
+      icon : "../../assets/icons/css-3.svg",
+      type : "front"
+    }, //AGREGAR POSTMAN XAMPP SLITE
   ];
-
+  
   type: string = "all";
 
   constructor() { }

@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'solemer';
-  
+  navHide: boolean = true;
+
+  toggleNav() {
+    this.navHide = !this.navHide;
+  }
 }

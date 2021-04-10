@@ -10,11 +10,16 @@ export class SmHomeComponent implements OnInit {
   words = ["Quality code","Creative","Intuitive pages","Ingenius","Proactive"];
   word = "";
   cont = -1;
-
+  
+  
   constructor() { }
-
+  
+  
   ngOnInit(): void {
     this.changeWords();
+  }
+  ngOnDestroy(): void {
+    clearTimeout();
   }
 
   changeWords() {

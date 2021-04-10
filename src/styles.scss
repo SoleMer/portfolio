@@ -27,6 +27,9 @@ html {
     padding-top: 10px;
 }
 //---------NAV---------//
+.btn-nav {
+    display: none;
+}
 nav {
     background-color: $color-base;
     width: 100px;
@@ -92,4 +95,55 @@ p {
         
 @media only screen and (max-width: 768px) {
 
+    //---------NAV---------//
+    .btn-nav {
+        display: inline-block;
+        position: fixed;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        background-color: $color-base;
+        color: black;
+    }
+    .btn-nav:active {
+        animation: 0.7s click 1;
+    }
+    nav {
+        height: 600px;
+        margin-top: 15px;
+        animation: slide-down 2s;
+        z-index: 2;
+    }
+    .hide {
+        display: none;
+    }
+    .nav-icon {
+        z-index: 3;
+    }
+
+    @keyframes click{
+        25%, 75%{
+            transform:scale(0.8);
+        }
+        50%{
+            transform:scale(1.1);
+        }
+    }
+
+    @keyframes slide-down {
+        from { height: 0% }
+        to { height: 100%; }        
+    }
+
+    .section-title {
+        width: 75%;
+        height: 70px;
+        margin-left: 45px;
+        margin-bottom: 50px;
+        margin-top: 150px;
+        font-size: large;
+        text-align: center;
+        background-color: black;
+        color: $color-base;
+    } 
 }

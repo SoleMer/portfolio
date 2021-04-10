@@ -72,3 +72,37 @@ a {
 	}
 
 }
+
+/* --------------------------------RESPONSIVE------------------------------- */
+        
+@media only screen and (max-width: 768px) {
+    .works {
+        width: 330px;
+        height: auto;
+        margin-left: 8px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: x-large;
+    }
+    .over{
+        height: auto;
+    }
+    .page {
+        width: 200px;
+        height: auto;
+        margin-right: 65px;
+        position: relative;
+        border-radius: 50%;
+        margin-top: 0;
+    }
+    .list {
+        margin-left: 150px;
+    }
+    .tec {
+        text-align: right;
+        position: relative;
+        right: 20px;
+        list-style: none; 
+        padding-top: 50px;
+    }
+}

@@ -98,3 +98,52 @@ h1 span {
 		transform: translate(0);
 	}
 }
+
+/* --------------------------------RESPONSIVE------------------------------- */
+        
+@media only screen and (max-width: 768px) {
+	.container {
+		text-align: center;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		position: relative;
+		top: 40px; 
+		margin-left: 0;
+	}
+	.caption {
+		grid-column: 1;
+		grid-row: 2 ;
+		text-align: center;
+		font-size: xx-large;
+		width: 250px;
+    	margin-left: 50px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	//-------ANIMATION----------// 
+	.animation-container {
+		margin: auto;
+		background-color: black;
+		width: 260px;
+		height: 70px;
+		grid-column: 1;
+		grid-row: 3 ;
+		text-align: center;
+		margin-left: 50px;
+	}
+
+	.animation-words { 
+		position: relative; 
+		background: black;
+		color: $color-base;
+		font-size: 2em;
+	}
+
+	.scroll {
+		grid-column: 1;
+		grid-row: 5;
+		margin-left: 140px;
+	}
+}

@@ -22,17 +22,17 @@ export class SmRepositoriesComponent implements OnInit {
     {
       technology: "Java",
       url: "https://github.com/SoleMer/repo-programacion",
-      name: "Juego de cartas y personajes"
+      name: "Card and characters game"
     },
     {
       technology: "PHP - Vue - Smarty - MySQL - PDO - Xampp - Postman",
       url: "https://github.com/SoleMer/Web2-TPE",
-      name: "Pagina de comercio"
+      name: "E-commerce website"
     },
     {
       technology: "GOlang - SQLite - Postman",
       url: "https://github.com/SoleMer/proyecto-go",
-      name: "Creacion y conexion de API Rest"
+      name: "API Rest creation and connection"
     },
   ]
 

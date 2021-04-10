@@ -78,6 +78,8 @@ a {
     vertical-align: middle;
     grid-column: 1/4;
     grid-row: 1;
+    background-color: black;
+    color: $color-base;
 
 }
 h3 {
@@ -104,11 +106,15 @@ h3 {
     margin-top: 5%;
     margin-left: 40%;
 }
+.btn-go:hover {
+    cursor: pointer;
+}
 .repo-tech {
    // display: block;
     margin-top: 0;
     grid-column: 1/6;
     grid-row: 2;
+    
 }
 img:active {
     animation: 0.7s click 1;

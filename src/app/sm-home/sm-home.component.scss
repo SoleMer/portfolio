@@ -43,7 +43,7 @@ h1 span {
     width:0;
     background: black;
     border-left: 1px solid #000;
-    animation: write 2s steps(30) infinite alternate;
+    animation: write 2s steps(30) infinite alternate; 
 }
 
 @keyframes write {

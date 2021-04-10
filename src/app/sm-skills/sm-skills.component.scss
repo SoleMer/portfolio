@@ -25,6 +25,10 @@ $color-second : #EBDEF0;
     grid-column: 2;
     grid-row: 1;
 }
+.tech:hover, .soft:hover {
+    background-color: black;
+    color: $color-base;
+}
 .selected {
     background-color: $color-second;
 }

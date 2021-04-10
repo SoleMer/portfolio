@@ -2,12 +2,12 @@ $color-base : #FCEAFE;
 $color-second : #EBDEF0;
 .big-title {
     width: 530px;
-    margin-left: 375px;
+    margin-left: 400px;
 }
 .repositories {
     width: 90%;
     height: auto;
-    margin-left: 5%;
+    margin-left: 115px;
 }
 .repo-profile {
     display: grid;
@@ -15,7 +15,7 @@ $color-second : #EBDEF0;
     grid-auto-rows: minmax(100px, auto);
     width: 90%;
     height: auto;
-    margin-left: 5%;
+    margin-left: 85px;
 }
 .profile {
     position: relative;

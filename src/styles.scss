@@ -12,9 +12,9 @@ body {
 .section-title {
     width: 30%;
     height: 80px;
-    margin-left: 35%;
+    margin-left: 495px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 200px;
     font-size: x-large;
     text-align: center;
     background-color: black;
@@ -30,6 +30,7 @@ nav {
     height: 615px;
     display: inline-block;
     box-shadow: 4px 4px 5px grey;
+    position: fixed;
 }
 .nav-ul {
     list-style: none; 

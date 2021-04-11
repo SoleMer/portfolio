@@ -97,3 +97,15 @@ $color-second : #EBDEF0;
   font-size: x-large;
   color: black
 }
+
+/* --------------------------------RESPONSIVE------------------------------- */
+        
+@media only screen and (max-width: 768px) {
+    .option {
+        padding-left: 13px;
+    }
+    .grid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

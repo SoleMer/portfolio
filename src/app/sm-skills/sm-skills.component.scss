@@ -30,7 +30,8 @@ $color-second : #EBDEF0;
     color: $color-base;
 }
 .selected {
-    background-color: $color-second;
+    background-color: black;
+    color: $color-base;
 }
 .skills {
     width: 70%;
@@ -40,4 +41,24 @@ $color-second : #EBDEF0;
     background-color: $color-base;
     padding-top: 20px;
     
+}
+
+/* --------------------------------RESPONSIVE------------------------------- */
+        
+@media only screen and (max-width: 768px) {
+    .btns {
+        grid-auto-rows: minmax(70px, auto);
+        width: 80%;
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .tech h1, .soft h1{
+        font-size: large;
+        margin-top: 30px;
+    }
+    .skills {
+        width: 95%;
+        margin-left: 10px;
+    }
 }

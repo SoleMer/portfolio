@@ -83,3 +83,64 @@ a {
 		transform:scale(1.1);
 	}
 }
+
+/* --------------------------------RESPONSIVE------------------------------- */
+        
+@media only screen and (max-width: 768px) {
+    .contact {
+        width: 95%;
+        height: 600px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+    }
+    .data {
+        padding-top: 50px;
+    }
+    .item {
+        font-size: small;
+        text-align: left;
+        display: flex;
+    }
+    .icon {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .photo {
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 0;
+        padding-bottom: 5%;
+    }
+    .photography {
+        right: 10px;
+        top: 30px;
+        left: 10px;
+    }
+    .send-email {
+        width: 80%;
+        height: 85px;
+        grid-column: 1;
+        grid-row: 2;
+        left: 30px;
+        top: 80%;
+    }
+    .btn-super {
+        padding-top: 50%;
+    }
+    .btn {
+        position: relative;
+        border: solid black;
+        border-radius: 50px;
+        height: 65px;
+        margin-left: 5%;
+        margin-bottom: 100px;
+        background-color: black;
+        color: $color-base;
+    }
+    .my-name {
+        margin-bottom: 20px;
+    }
+    .margin-bottom {
+        margin-bottom: 30px;
+    }
+}

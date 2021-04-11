@@ -104,15 +104,19 @@ p {
         text-align: center;
         background-color: $color-base;
         color: black;
+        z-index: 999;
     }
     .btn-nav:active {
         animation: 0.7s click 1;
     }
     nav {
-        height: 600px;
+        height: 540px;
         margin-top: 15px;
         animation: slide-down 2s;
         z-index: 2;
+    }
+    li {
+        height: 100px;
     }
     .hide {
         display: none;

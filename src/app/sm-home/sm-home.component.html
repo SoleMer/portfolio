@@ -6,7 +6,13 @@
     </div>
     <!--<img class="profile" src="../../assets/profile.jpeg" alt="">-->
     <div class="animation-container">
-        <h1 class="animation-words">{{word}}<span>&#160;</span></h1>
+        <div class="animation-words">
+        <h1 class="not-margin"><p *ngFor="let l of (letters$ | async)">{{l}}</p><span>&#160;</span></h1>
+    </div>
     </div>
     <div class="scroll"></div>
 </div>
+
+<!--
+    <span>&#160;</span>
+-->

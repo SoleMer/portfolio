@@ -30,7 +30,7 @@ $color-second : #EBDEF0;
 .profile:hover{
 	animation: 0.7s click 1;
 }
-
+ 
 @keyframes click{
 	25%, 75%{
 		transform:scale(0.8);
@@ -118,4 +118,69 @@ h3 {
 }
 img:active {
     animation: 0.7s click 1;
+}
+
+/* --------------------------------RESPONSIVE------------------------------- */
+        
+@media only screen and (max-width: 768px) {
+    .big-title {
+        width: 324px;
+        height: 100px;
+        margin-left: 10px;
+    }
+    .repositories {
+        width: 90%;
+        height: auto;
+        margin-left: 15px;
+    }
+    .box {
+        width: 95%;
+        margin-left: 10px;
+        margin-top: 50px;
+        text-align: left;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        
+    }
+    .repo {
+        grid-column: 1;
+        margin-left: 20px;
+        width: 95%;
+        display: grid;
+    }
+    .repo-name {
+        display: block;
+        grid-column: 1/6;
+        grid-row: 1;
+        background-color: black;
+        color: $color-base;
+        height: auto;
+        min-height: 30px;
+    }
+    .repo-go {
+         right: 5%;
+         grid-column: 2/5;
+         grid-row: 3;
+         margin-bottom: 5%;
+     }
+     .btn-go {
+         grid-column: 2/5;
+         grid-row: 3;
+     }
+     h3 {
+        margin-bottom: 0;
+    }
+    .repo-profile {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 70px;
+    }
+    .profile {
+        grid-column: 1;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
 }

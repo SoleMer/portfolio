@@ -1,5 +1,7 @@
 # Portfolio SoleMer
 
+This is the online portfolio of the web developer Soledad Merino.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
 ## Development server

@@ -35,7 +35,7 @@ export class SmLetterService {
     } 
     this.timer = setTimeout(() => {
       this.manageLetters();
-    }, 150);
+    }, 100);
   }
 
   addLetter(){ 

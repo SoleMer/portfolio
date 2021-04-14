@@ -1,8 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "21aaab2f-c2dd-45d5-83c2-5b249d1a27c0"
-  },
+  
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -11,9 +9,6 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
         }
       },
       "root": "",
@@ -56,13 +51,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -130,5 +125,10 @@
       }
     }
   },
-  "defaultProject": "solemer"
+  "defaultProject": "solemer",
+  "cli": {
+    "analytics": "21aaab2f-c2dd-45d5-83c2-5b249d1a27c0"
+  }
 }
+
+

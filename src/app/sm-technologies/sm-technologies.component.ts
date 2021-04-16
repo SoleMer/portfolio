@@ -94,6 +94,16 @@ export class SmTechnologiesComponent implements OnInit {
       icon : "../../assets/icons/xampp.svg",
       type : "tools"
     },
+    {
+      name : "Vue",
+      icon : "../../assets/icons/vue.svg.png",
+      type : "front"
+    },
+    {
+      name : "Netlify",
+      icon : "../../assets/icons/netlify.svg",
+      type : "tools"
+    },
   ];
   
   type: string = "all";

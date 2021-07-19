@@ -2,29 +2,25 @@ $color-base : #FCEAFE;
 $color-second : #EBDEF0;
 .big-title {
     width: 530px;
-    margin-left: 400px;
+    margin-left: 4%;
 }
 .repositories {
+    grid-column: 2/6;
+    grid-row: 2;
     width: 90%;
     height: auto;
-    margin-left: 115px;
+    margin-left: 5%;
 }
 .repo-profile {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-column: 3;
+    grid-row: 3;
     width: 90%;
     height: auto;
     margin-left: 85px;
-}
-.profile {
-    position: relative;
-    grid-column: 2;
-    grid-row: 1;
     border: solid black;
     border-radius: 50px;
     height: 65px;
-    margin-left: 30%;
+    margin-left: 55%;
     margin-bottom: 100px;
 }
 .profile:hover{
@@ -182,5 +178,20 @@ img:active {
         grid-column: 1;
         margin-left: 0;
         margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1800px) {
+    .big-title {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .big-title {
+        margin-left: 30%;
+    }
+    .section-title {
+        grid-column: 1/6;
     }
 }

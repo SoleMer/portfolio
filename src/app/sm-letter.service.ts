@@ -51,13 +51,10 @@ export class SmLetterService {
   }
 
   removeLetter() {
-    console.log("remove letter"); 
     if(this.countLetter > 0) {
       this._letters.pop();
       this.countLetter--;
       this.indexLetterOfWord --;
-      console.log(this._letters); 
-      console.log(this.countLetter); 
       this.letters.next(this._letters);
     } else {
       this.changeWord();
